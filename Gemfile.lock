@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/beeminder/beeminder-gem.git
-  revision: f9ba26826943ffa7e8c013384aa12db329fb5c88
+  remote: https://github.com/beeminder/beeminder-gem.git
+  revision: e51a35fc3018e07dc42beabd7fa214f0f8516c80
   specs:
     beeminder (0.2.11)
       activesupport (>= 3.2, < 6)
