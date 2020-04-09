@@ -27,10 +27,10 @@ GEM
     json (2.3.0)
     minitest (5.14.0)
     optimist (3.0.0)
-    sequel (5.30.0)
+    sequel (5.31.0)
     sqlite3 (1.4.2)
     thread_safe (0.3.6)
-    tzinfo (1.2.6)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
 
 PLATFORMS
