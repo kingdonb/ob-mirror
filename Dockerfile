@@ -34,7 +34,8 @@ ADD Gemfile Gemfile.lock .ruby-version ${APPDIR}/
 RUN  bash --login -c 'bundle install'
 
 # include the app source code
-ADD .   ${APPDIR}
+ADD --chown=rvm .   ${APPDIR}
+
 # web.rb for default health checking on Proctype "cmd"
 CMD  bundle exec ruby ./web.rb
 EXPOSE 5000
