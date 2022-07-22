@@ -30,7 +30,7 @@ GEM
     sequel (5.50.0)
     sqlite3 (1.4.2)
     thread_safe (0.3.6)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
