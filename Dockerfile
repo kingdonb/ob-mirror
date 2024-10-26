@@ -1,6 +1,6 @@
 ARG RVM_RUBY_VERSIONS="3.0.7"
 FROM kingdonb/docker-rvm
-LABEL maintainer="Kingdon Barrett <kingdon.b@nd.edu>"
+LABEL maintainer="Kingdon Barrett <kingdon@tuesdaystudios.com>"
 ENV APPDIR="/home/${RVM_USER}/ob-mirror"
 ENV SCHEMA="sqlite.schema"
 ENV STATE="beegraph.sqlite"
