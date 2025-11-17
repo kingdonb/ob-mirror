@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ob-mirror
+  name: ob-mirror
+  namespace: ob-mirror
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ob-mirror
+  template:
+    metadata:
+      labels:
+        app: ob-mirror
+    spec:
+      containers:
+      - image: ghcr.io/kingdonb/ob-mirror:canary
+        imagePullPolicy: Always
+        name: ob-mirror
+        command: ["bash"]
+        args: ["-c", "./README; sleep $((15 * 60 * 4 * 4))"]
+        envFrom:
+        - secretRef:
+            name: ob-env

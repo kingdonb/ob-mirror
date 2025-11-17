@@ -1,6 +1,6 @@
-ARG RVM_RUBY_VERSIONS="3.0.6"
+ARG RVM_RUBY_VERSIONS="3.0.7"
 FROM kingdonb/docker-rvm
-LABEL maintainer="Kingdon Barrett <kingdon.b@nd.edu>"
+LABEL maintainer="Kingdon Barrett <kingdon@tuesdaystudios.com>"
 ENV APPDIR="/home/${RVM_USER}/ob-mirror"
 ENV SCHEMA="sqlite.schema"
 ENV STATE="beegraph.sqlite"
@@ -27,7 +27,7 @@ RUN sqlite3 ${STATE} < /tmp/${SCHEMA}
 # RVM_USER is permitted to create files and may write to $STATE
 RUN chown ${RVM_USER} ${APPDIR}/${STATE} ${APPDIR}
 USER ${RVM_USER}
-ENV RUBY=3.0.6
+ENV RUBY=3.0.7
 
 # include the ruby-version and Gemfile for bundle install
 ADD Gemfile Gemfile.lock .ruby-version ${APPDIR}/

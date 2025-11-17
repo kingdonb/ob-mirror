@@ -4,8 +4,8 @@ BE='bundle exec'
 RU='rvm'
 
 RVM_ENVIR=/etc/profile.d/rvm.sh
-#RVM_ENVIR=~/.rvm/scripts/rvm
-RUBY_VERS=2.7.6
+# RVM_ENVIR=~/.rvm/scripts/rvm
+RUBY_VERS=3.0.7
 
 # If this is a "do more" goal, then you must convert it to Custom and be sure
 # to manually disable the Beeminder API setting "goal_kyoom"
